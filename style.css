@@ -199,7 +199,7 @@ h1{
     justify-content: space-between;
     align-items: center;
  }
- /* to be changed later*/
+ 
     .menu-item img {
         width: 80%;
         height: 150px;
@@ -223,4 +223,7 @@ h1{
     color:rgb(143, 140, 120);
     font-size:0.95rem;
 }
+/* end of menu page css*/
+
+
 
