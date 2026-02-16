@@ -1,5 +1,5 @@
 /*homepage css*/
-body {
+body.homepage {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,7 +11,8 @@ body {
     background-color: rgb(219, 217, 207);
 }
 
-h1{
+.hero
+{
     text-align: center;
     color: rgb(143, 140, 120);
     font-style: italic;
@@ -224,6 +225,86 @@ h1{
     font-size:0.95rem;
 }
 /* end of menu page css*/
+
+/* reservation page css*/
+.feature{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap:2rem;
+    margin-top: 3rem;
+}
+
+.feature-card{
+    background-color: rgb(219, 217, 207);
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 2px solid rgb(143, 140, 120);
+    box-shadow: 0 2PX 5PX rgba(0,0,0,0.1);
+    text-align: center;
+}
+.feature-card h3{
+    color:rgb(143, 140, 120);
+    margin-bottom: 1rem;
+}
+
+.reservation-form{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: rgb(219, 217, 207);
+    border-radius: 10px;
+    border: 2px solid rgb(143, 140, 120);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.form-group{
+    margin-bottom: 1.5rem;
+}
+.form-group label{
+    display: block;
+    margin-bottom: 0.5rem;
+    color:rgb(143, 140, 120);
+    font-weight: 450;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select{
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid rgb(143, 140, 120);
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus{
+    outline: none;
+    border-color: rgb(143, 140, 120);
+    box-shadow: 0 0 2px rgba(143, 140, 120, 0.2);
+}
+
+.submit-btn{
+    background-color: rgb(143, 140, 120);
+    color: white;
+    padding: 1rem,2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ;
+}
+
+.submit-btn:hover{
+    background-color: rgb(143, 140, 120);
+    opacity: 0.8;
+}
+
+/* end of reservation page css*/
 
 
 
