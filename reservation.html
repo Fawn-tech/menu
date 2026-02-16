@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserve</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    
+        <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="reservation.html">Order</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        
+        <h1 style="text-align: center; margin-bottom:2rem;color: #2c3e50;">Make a Reservation</h1>
+
+        <div style="display:grid; grid-template-columns: 1fr 1fr; gap:2rem; margin-bottom:3em;">
+           
+             <div class="feature-card">
+                <h3>📞 Call Us</h3>
+                <p style="font-size: 1.5rem;color:#e67e22;">(+254)734225958</p>
+                <p>Available daily from 8m to 10pm</p>
+            </div>
+
+             <div class="feature-card">
+                <h3>⏰Hours </h3>
+                <p>Mon-Thu: 11am - 10pm<br>Fri-Sat: 11am - 11pm<br>Sun: 12pm - 9pm</p>
+            </div>
+            </div>
+
+
+<form class="reservation-form" action="#" method="POST">
+         <div class="form group">
+             <label for=" name">Full Name *</label>
+                <input type="text" id="name" name="name" required>
+
+               <div class="form-group">
+                    <label for=" phone">Phone Number *</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    </div>
+
+                <div class="form-group">
+                    <label for=" date">Reservation Date *</label>
+                    <input type="date" id="date" name="date" required>
+                   </div>
+
+                <div class="form-group">
+                    <label for=" time">Reservation Time *</label>
+                    <input type="time" id="time" name="time" required>
+                   </div>
+
+                   <div class="form-group">
+                    <label for=" guests">Number of Guests *</label>
+                    <select  id="guests" name="guests" required>
+                <option value="">Select number of guests</option>
+                <option value="1">1 Person</option>
+                <option value="2">2 People</option>    
+                <option value="3">3 People</option>
+                <option value="4">4 People</option>        
+                <option value="5">5 People</option>
+                <option value="6">6 People</option>
+                <option value="7">7 People</option>
+                <option value="8">8 People</option>
+                </select>
+                   </div> 
+
+                   <div class="form-group">
+                    <label for=" special-requests">Special Requests</label>
+                    <textarea id="special-requests" name="special-requests" rows="2" placeholder="Any dietary restrictions or special requests?"></textarea>  
+                     </div>
+
+                <div class="form-group">
+                <label>
+                    <input type="checkbox" name="subscribe" checked>
+                    Subscribe to our newsletter for special offers
+                </label>
+            </div>
+
+
+
+
+
+    <button type="submit" class="submit-btn">Book Reservation</button>
+                </form>
+                
+       </div>
+    </main>
+
+    <div class="Footer">
+         <div class="Footer-section">
+             <h4 align="center"> <i>Faw_Neek Restaurant</i></h4>
+         <p align="center"> We look forward to seeing you</p>
+             </div>
+         </div>
+
+
+<script src="reservation.js"></script>
+</body>
+
+</html>

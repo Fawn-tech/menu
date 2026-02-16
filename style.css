@@ -1,43 +1,50 @@
+/*homepage css*/
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f0f0f0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgb(219, 217, 207);
 }
 
 h1{
     text-align: center;
-    color: red;
+    color: rgb(143, 140, 120);
     font-style: italic;
     font-display: fallback;
-    text-shadow: 0cm 0.1cm 0.2cm red;
+    text-shadow: 0cm 0.1cm 0.2cm rgb(143, 140, 120);
     margin-bottom: 20px;
+    background-image: url("https://i.pinimg.com/1200x/d7/37/43/d7374398f36d44fc314999c5ea5fe69d.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 0;
+    padding: 50px;
+    width: 100vw;
+    height: 50vh;
+    margin-bottom:5px;
+    position: relative;
+    z-index: 1;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 20px 0;
-    display: flex;
-    gap: 20px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
 
 .bouncey-text {
     display: inline-block;
     font-size: 3rem;
-    color: red;
+    align-content: center;
+    text-align: center;
+    padding: 60px 10px;
+    margin-bottom: 25px;
+    color: rgb(235, 235, 232);
     animation-name: FAW_NEEK;
     animation-duration: 1s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
+
 }
 
 .bouncey-text:nth-child(1) { animation-delay: 0s; }
@@ -71,49 +78,85 @@ nav a {
     }
 }
 
-.container {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 20px;
+.card{
+    min-width: 200px;
+    height: 150px;
+    flex: 1 1 250px;
+    background-color: rgb(219, 217, 207);
+    border: 3px solid rgb(143, 140, 120);
+    border-radius: 12px;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(143, 140, 120, 0.5);
+}
+
+.card.clicked {
+    animation: clickPulse 0.4s ease-out;
+}
+
+@keyframes clickPulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.95);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Star Rating Review Section */
+.review-section {
     width: 100%;
-    max-width: 1200px;
-    padding: 20px;
-}
-
-.section {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.food {
-    grid-column: span 4;
-}
-
-.drinks {
-    grid-column: span 4;
-}
-
-.desserts {
-    grid-column: span 4;
-}
-
-.item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.item img {
-    width: 150px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 4px;
-}
-
-.item p {
-    margin: 5px 0;
+    padding: 2rem;
+    background-color: rgb(219, 217, 207);
     text-align: center;
+    margin-top: 1rem;
 }
+
+.rating-container h3 {
+    color: rgb(143, 140, 120);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.stars {
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.stars .fa-star {
+    color: #ccc;
+    transition: color 0.2s ease, transform 0.2s ease;
+    margin: 0 0.25rem;
+}
+
+.stars .fa-star:hover {
+    transform: scale(1.2);
+}
+
+.stars .fa-star.fas {
+    color: #f39c12;
+}
+
+.stars .fa-star:hover~.fa-star {
+    color: #ccc;
+}
+
+.stars .fa-star:hover {
+    color: #f39c12;
+}
+
+.rating-text {
+    color: rgb(143, 140, 120);
+    font-size: 1rem;
+    margin-top: 1rem;
+    font-style: italic;
+}
+

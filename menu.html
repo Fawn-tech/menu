@@ -3,69 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Our Menu-Faw Neek Restaurant</title>
+    <link rel="stylesheet" href="style2.css">
+
 </head>
 <body>
-    <h2>Our Menu</h2>
-    
-<div class="container">
-        <div class="section food">
-            <h2>Food</h2>
-            <div class="item">
-                <img src="https://via.placeholder.com/150x100?text=Pizza" alt="Pizza">
-                <p>Pizza</p>
-                <p>$12.99</p>
-            </div>
-            <div class="item">
-                <img src="https://via.placeholder.com/150x100?text=Burger" alt="Burger">
-                <p>Burger</p>
-                <p>$8.99</p>
-            </div>
-            <div class="item">
-                <img src="https://via.placeholder.com/150x100?text=Pasta" alt="Pasta">
-                <p>Pasta</p>
-                <p>$10.99</p>
-            </div>
-        </div>
-        <div class="section drinks">
-            <h2>Drinks</h2>
-            <div class="item">
-                <img src="https://via.placeholder.com/150x100?text=Coffee" alt="Coffee">
-                <p>Coffee</p>
-                <p>$3.99</p>
-            </div>
-            <div class="item">
-                <img src="https://via.placeholder.com/150x100?text=Juice" alt="Juice">
-                <p>Juice</p>
-                <p>$4.99</p>
-            </div>
-            <div class="item">
-                <img src="https://via.placeholder.com/150x100?text=Soda" alt="Soda">
-                <p>Soda</p>
-                <p>$2.99</p>
-            </div>
-        </div>
-        <div class="section desserts">
-            <h2>Desserts</h2>
-            <div class="item">
-                <img src="https://via.placeholder.com/150x100?text=Cake" alt="Cake">
-                <p>Cake</p>
-                <p>$6.99</p>
-            </div>
-            <div class="item">
-                <img src="https://via.placeholder.com/150x100?text=Ice+Cream" alt="Ice Cream">
-                <p>Ice Cream</p>
-                <p>$5.99</p>
-            </div>
-            <div class="item">
-                <img src="https://via.placeholder.com/150x100?text=Pie" alt="Pie">
-                <p>Pie</p>
-                <p>$7.99</p>
-            </div>
-        </div>
-    </div>
+    <main>    
+    <header>
+<nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="reservation.html">Order</a></li>
+        </ul>
+    </nav>
+</header>
+<h1 style="text-align: center;margin-bottom:2rem; color:#2c3e50;">Our Menu</h1>
 
-    
+<section class="filter-section" style="max-width: 1200px; margin: 0 auto 2rem; padding: 0 1rem;">
+            <!-- Search Bar -->
+            <div class="search-container" style="margin-bottom: 1rem;">
+                <form id="searchForm" onsubmit="return false;">
+                    <input 
+                        type="text" 
+                        id="searchInput" 
+                        placeholder="Search dishes by name..." 
+                        style="width: 100%; padding: 0.8rem; border: 2px solid #8e44ad; border-radius: 5px; font-size: 1rem;" >
+                </form>
+            </div>
+            </section>
+
+            <!-- No Results Message -->
+            <div id="noResultsMessage" style="display: none; text-align: center; padding: 2rem; color: #e74c3c;">
+                <h3>No dishes found</h3>
+                <p>Try searching with different keywords</p>
+            </div>
+
+            <!-- Menu Container -->
+            <div id="menuContainer">
+
+            
+<section class="menu-section">
+    <h2>Voyage </h2>
+    <div class="menu-grid">
+        <div class="menu-item" data-name="Nyama Choma">
+             <img src="https://img.freepik.com/free-photo/top-view-meat-kebab-with-potatoes-grilled-vegetables-with-sauce-board_141793-4077.jpg?semt=ais_user_personalization&w=740&q=80" alt="choma" style="width: 80%; height: 150px; object-fit: cover; border-radius: 5px; margin-bottom: 1rem;">
+             <h3>Nyama Choma</h3>
+            <p>Grilled beef marinated in Kenyan spices, served with sides.</p>
+            <span class="price">800</span>
+            </div>
+
+        <div class="menu-item" data-name="Chicken stew">
+             <img src="https://plus.unsplash.com/premium_photo-1661419883163-bb4df1c10109?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y2hpY2tlbiUyMHN0ZXd8ZW58MHx8MHx8fDA%3D" alt="stew" style="width: 80%; height: 150px; object-fit: cover; border-radius: 5px; margin-bottom: 1rem;">
+            <h3>Chicken stew</h3>
+            <p>Marinated chicken with sautéed with onions, tomatoes, and cornmeal.</p>
+            <span class="price">450kshs</span>
+        </div>
+        <div class="menu-item" data-name="Chapati">
+        <img src="https://images.unsplash.com/photo-1718874560784-d4164371eb38?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNoYXBhdGl8ZW58MHx8MHx8fDA%3D" alt="Chapati" style="width: 80%; height: 150px; object-fit: cover; border-radius: 5px; margin-bottom: 1rem;">
+            <h3>Chapati</h3>
+            <p>Soft flatbread made with wheat flour, served with stew.</p>
+            <span class="price">200kshs</span>
+        </div>
+        </div>
+        </section>
+
+        
+
+    <section class="menu-section">
+    <h2>Main dish </h2>
+    <div class="menu-grid">
+        <div class="menu-item" data-name="Pilau">
+             <img src="https://i.pinimg.com/736x/83/63/6e/83636e0b1a2c91568ac18268c9055676.jpg" alt="Pilau" style="width: 80%; height: 150px; object-fit: cover; border-radius: 5px; margin-bottom: 1rem;">
+            <h3>Pilau</h3>
+            <p>Fragrant rice cooked with spices, meat, and vegetables.</p>
+            <span class="price">250kshs</span>
+            </div>
+
+        <div class="menu-item" data-name="Ugali and beef">
+             <img src="https://i.ytimg.com/vi/uP-xJgshQbk/maxresdefault.jpg" alt="Ugali" style="width: 80%; height: 150px; object-fit: cover; border-radius: 5px; margin-bottom: 1rem;">
+            <h3>Ugali and beef</h3>
+            <p>Traditional cornmeal porridge, a staple of Kenyan cuisine.</p>
+            <span class="price">400kshs</span>
+        </div>
+        <div class="menu-item" data-name="Tea and Mandazi">
+             <img src="https://i.pinimg.com/1200x/a2/83/6f/a2836fb2ebf4b56bdfb524597ac12b13.jpg" alt="Mandazi" style="width: 80%; height: 150px; object-fit: cover; border-radius: 5px; margin-bottom: 1rem;">
+            <h3>Tea and Mandazi</h3>
+            <p>Fried dough pastry, sweet and delicious Kenyan snack.</p>
+            <span class="price">150kshs</span>
+        </div>
+        </div>
+        </section>
+
+          
+    <section class="menu-section">
+    <h2>Local -dish</h2>
+    <div class="menu-grid">
+        <div class="menu-item" data-name="Githeri">
+                <img src="https://i.pinimg.com/736x/ce/06/f2/ce06f265ad695276f807558da93a5ad2.jpg" alt="Githeri" style="width: 80%; height: 150px; object-fit: cover; border-radius: 5px; margin-bottom: 1rem;">
+            <h3>Githeri</h3>
+            <p>Traditional stew with corn, beans, and vegetables.</p>
+            <span class="price">200kshs</span>
+            </div>
+
+        <div class="menu-item" data-name="Kachumbari">
+                <img src="https://i.pinimg.com/1200x/b7/f3/5a/b7f35a00b006bd77c8b1d9cad3fe604f.jpg" alt="kachumbari" style="width: 80%; height: 150px; object-fit: cover; border-radius: 5px; margin-bottom: 1rem;">
+            <h3>Kachumbari</h3>
+            <p>Fresh tomato and onion salad with cilantro and lime.</p>
+            <span class="price">50kshs</span>
+        </div>
+        <div class="menu-item" data-name="Irio">
+                <img src="https://i.pinimg.com/736x/90/d9/b1/90d9b1ca3d9d18a01834e85a9f640a84.jpg" alt="Irio" style="width: 80%; height: 150px; object-fit: cover; border-radius: 5px; margin-bottom: 1rem;">
+            <h3>Irio</h3>
+            <p>Mashed peas, corn, and potatoes with Kenyan spices.</p>
+            <span class="price">150kshs</span>
+        </div>
+        </div>
+        </section>
+
+        
+        <section class="menu-section">
+    <h2>Starters </h2>
+    <div class="menu-grid">
+        <div class="menu-item" data-name="Matoke">
+                <img src="https://i.pinimg.com/1200x/b4/5c/25/b45c253cc5cd902d2fbe22d9c5949545.jpg" alt="Matoke" style="width: 80%; height: 150px; object-fit: cover; border-radius: 5px; margin-bottom: 1rem;">
+            <h3>Matoke</h3>
+            <p>Steamed plantains cooked with peanuts and spices.</p>
+            <span class="price">250kshs</span>
+            </div>
+
+        <div class="menu-item" data-name="Bhazi">
+                <img src="https://i.pinimg.com/1200x/72/33/a4/7233a4e3271c7941a13722bfa8ca5742.jpg" alt="Bhazi" style="width: 80%; height: 150px; object-fit: cover; border-radius: 5px; margin-bottom: 1rem;">
+            <h3>Bhazi</h3>
+            <p>Crispy fried bananas, a popular Kenyan street food.</p>
+            <span class="price">300kshs</span>
+        </div>
+        <div class="menu-item" data-name="Mahindi">
+                <img src="https://i.pinimg.com/736x/8b/57/92/8b5792140f31e6b2772051c5a9ce884c.jpg" alt="Mahindi" style="width: 80%; height: 150px; object-fit: cover; border-radius: 5px; margin-bottom: 1rem;">
+            <h3>Mahindi</h3>
+            <p>Roasted corn on the cob with Kenyan spices.</p>
+            <span class="price">100kshs</span>
+        </div>
+        </div>
+        </section>
+        </div>
+
+        <!-- Custom Items Container -->
+        <div id="customItemsContainer"></div>
+    </main>    
+
+    <footer>
+        <div class="footer-content">
+            <div class="Footer-section">
+                <h4 align="center"> <i>Faw_Neek Menu</i></h4>
+        <p align="center">May your meal be as good as your vibes</p>
+            </div>
+        </div>
+</footer>
+    <script src="menu.js"></script>
 </body>
 </html>
